@@ -481,6 +481,9 @@ TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextScaled = true
 TextButton_5.TextSize = 14.000
 TextButton_5.TextWrapped = true
+TextButton_5.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/blzrcrack/refs/heads/main/ZT.lua", true))()
+end)
 
 TextLabel_29.Parent = Test
 TextLabel_29.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
