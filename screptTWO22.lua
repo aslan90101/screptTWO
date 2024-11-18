@@ -63,7 +63,12 @@ local TextButton_13 = Instance.new("TextButton")
 local TextButton_14 = Instance.new("TextButton")
 local TextButton_15 = Instance.new("TextButton")
 local TextButton_16 = Instance.new("TextButton")
+local TextLabel_41 = Instance.new("TextLabel")
+local TextLabel_42 = Instance.new("TextLabel")
 local TextButton_17 = Instance.new("TextButton")
+local TextButton_18 = Instance.new("TextButton")
+local TextButton_19 = Instance.new("TextButton")
+local TextButton_20 = Instance.new("TextButton")
 
 --Properties:
 
@@ -78,6 +83,7 @@ Test.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Test.BorderSizePixel = 0
 Test.Position = UDim2.new(0.226584017, 0, 0.0188442208, 0)
 Test.Size = UDim2.new(0, 793, 0, 700)
+Test.Visible = false
 
 Frame.Parent = Test
 Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
@@ -521,7 +527,7 @@ TextButton_7.BorderSizePixel = 0
 TextButton_7.Position = UDim2.new(0.0378310196, 0, 0.19571428, 0)
 TextButton_7.Size = UDim2.new(0, 334, 0, 25)
 TextButton_7.Font = Enum.Font.SourceSansBold
-TextButton_7.Text = "Noclip dont turn off!"
+TextButton_7.Text = "Noclip !dont turn off!"
 TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.TextScaled = true
 TextButton_7.TextSize = 14.000
@@ -529,6 +535,7 @@ TextButton_7.TextWrapped = true
 TextButton_7.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/p1doras/refs/heads/main/README.lua", true))()
 end)
+
 
 TextButton_8.Parent = Test
 TextButton_8.BackgroundColor3 = Color3.fromRGB(18, 29, 98)
@@ -545,6 +552,7 @@ TextButton_8.TextWrapped = true
 TextButton_8.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/spinnn/refs/heads/main/spiin.lua", true))()
 end)
+
 
 TextLabel_30.Parent = Test
 TextLabel_30.BackgroundColor3 = Color3.fromRGB(22, 39, 86)
@@ -706,7 +714,7 @@ TextLabel_38.BackgroundColor3 = Color3.fromRGB(11, 22, 68)
 TextLabel_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_38.BorderSizePixel = 0
 TextLabel_38.Position = UDim2.new(0.51450187, 0, 0.464285702, 0)
-TextLabel_38.Size = UDim2.new(0, 361, 0, 274)
+TextLabel_38.Size = UDim2.new(0, 361, 0, 71)
 TextLabel_38.Font = Enum.Font.SourceSans
 TextLabel_38.Text = ""
 TextLabel_38.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -758,7 +766,7 @@ TextButton_14.Parent = Test
 TextButton_14.BackgroundColor3 = Color3.fromRGB(21, 33, 113)
 TextButton_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_14.BorderSizePixel = 0
-TextButton_14.Position = UDim2.new(0.0378310196, 0, 0.709999979, 0)
+TextButton_14.Position = UDim2.new(0.0378310196, 0, 0.742857158, 0)
 TextButton_14.Size = UDim2.new(0, 334, 0, 27)
 TextButton_14.Font = Enum.Font.SourceSansBold
 TextButton_14.Text = "Soalra Hub"
@@ -774,8 +782,8 @@ TextButton_15.Parent = Test
 TextButton_15.BackgroundColor3 = Color3.fromRGB(10, 22, 102)
 TextButton_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_15.BorderSizePixel = 0
-TextButton_15.Position = UDim2.new(0.572509468, 0, 0.531428576, 0)
-TextButton_15.Size = UDim2.new(0, 258, 0, 131)
+TextButton_15.Position = UDim2.new(0.533417404, 0, 0.521428585, 0)
+TextButton_15.Size = UDim2.new(0, 330, 0, 24)
 TextButton_15.Font = Enum.Font.SourceSansBold
 TextButton_15.Text = "Unlock first person"
 TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -790,7 +798,7 @@ TextButton_16.Parent = Test
 TextButton_16.BackgroundColor3 = Color3.fromRGB(14, 28, 120)
 TextButton_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_16.BorderSizePixel = 0
-TextButton_16.Position = UDim2.new(0.0378310196, 0, 0.664285719, 0)
+TextButton_16.Position = UDim2.new(0.0378310196, 0, 0.797142863, 0)
 TextButton_16.Size = UDim2.new(0, 334, 0, 24)
 TextButton_16.Font = Enum.Font.SourceSansBold
 TextButton_16.Text = "Fling GUI"
@@ -802,23 +810,95 @@ TextButton_16.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://paste.ee/r/NTtmf", true))()
 end)
 
-TextButton_17.Parent = CoreGui
-TextButton_17.BackgroundColor3 = Color3.fromRGB(17, 32, 80)
+TextLabel_41.Parent = Test
+TextLabel_41.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_41.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_41.BorderSizePixel = 0
+TextLabel_41.Position = UDim2.new(0.533417404, 0, 0.571428597, 0)
+TextLabel_41.Size = UDim2.new(0, 91, 0, 50)
+TextLabel_41.Font = Enum.Font.SourceSansBold
+TextLabel_41.Text = "MISC"
+TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.TextScaled = true
+TextLabel_41.TextSize = 14.000
+TextLabel_41.TextWrapped = true
+
+TextLabel_42.Parent = Test
+TextLabel_42.BackgroundColor3 = Color3.fromRGB(12, 22, 68)
+TextLabel_42.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_42.BorderSizePixel = 0
+TextLabel_42.Position = UDim2.new(0.51450187, 0, 0.652857125, 0)
+TextLabel_42.Size = UDim2.new(0, 361, 0, 142)
+TextLabel_42.Font = Enum.Font.SourceSans
+TextLabel_42.Text = ""
+TextLabel_42.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_42.TextSize = 14.000
+
+TextButton_17.Parent = Test
+TextButton_17.BackgroundColor3 = Color3.fromRGB(28, 43, 138)
 TextButton_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_17.BorderSizePixel = 0
-TextButton_17.Position = UDim2.new(0.975206614, 0, 0.953517616, 0)
-TextButton_17.Size = UDim2.new(0, 36, 0, 37)
+TextButton_17.Position = UDim2.new(0.533417404, 0, 0.661428571, 0)
+TextButton_17.Size = UDim2.new(0, 330, 0, 24)
 TextButton_17.Font = Enum.Font.SourceSansBold
-TextButton_17.Text = "NL"
+TextButton_17.Text = "Nut Hub Universal"
 TextButton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_17.TextScaled = true
 TextButton_17.TextSize = 14.000
 TextButton_17.TextWrapped = true
+TextButton_17.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/01iq/scripthub/refs/heads/main/solara", true))()
+end)
+
+TextButton_18.Parent = Test
+TextButton_18.BackgroundColor3 = Color3.fromRGB(22, 42, 115)
+TextButton_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_18.BorderSizePixel = 0
+TextButton_18.Position = UDim2.new(0.0378310196, 0, 0.661428571, 0)
+TextButton_18.Size = UDim2.new(0, 334, 0, 24)
+TextButton_18.Font = Enum.Font.SourceSansBold
+TextButton_18.Text = "Big Platform"
+TextButton_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_18.TextScaled = true
+TextButton_18.TextSize = 14.000
+TextButton_18.TextWrapped = true
+TextButton_18.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/fgfg/refs/heads/main/sppppp.lua", true))()
+end)
+
+TextButton_19.Parent = Test
+TextButton_19.BackgroundColor3 = Color3.fromRGB(20, 39, 124)
+TextButton_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_19.BorderSizePixel = 0
+TextButton_19.Position = UDim2.new(0.0378310196, 0, 0.704285741, 0)
+TextButton_19.Size = UDim2.new(0, 334, 0, 19)
+TextButton_19.Font = Enum.Font.SourceSansBold
+TextButton_19.Text = "250 cubes"
+TextButton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_19.TextScaled = true
+TextButton_19.TextSize = 17.000
+TextButton_19.TextWrapped = true
+TextButton_19.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/sdafhgd/refs/heads/main/dsgdfjdsf.lua", true))()
+end)
+
+TextButton_20.Parent = CoreGui
+TextButton_20.BackgroundColor3 = Color3.fromRGB(17, 32, 80)
+TextButton_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_20.BorderSizePixel = 0
+TextButton_20.Position = UDim2.new(0.972451806, 0, 0.953517616, 0)
+TextButton_20.Size = UDim2.new(0, 40, 0, 37)
+TextButton_20.Font = Enum.Font.SourceSansBold
+TextButton_20.Text = "NL"
+TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_20.TextScaled = true
+TextButton_20.TextSize = 14.000
+TextButton_20.TextWrapped = true
 
 -- Scripts:
 
-local function UEOHEPQ_fake_script() -- TextButton_17.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_17)
+local function FAYFBK_fake_script() -- TextButton_20.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_20)
 
 	local button = script.Parent
 	local frame = button.Parent:FindFirstChild("Test") -- Найдите фрейм в родительском объекте
@@ -830,6 +910,7 @@ local function UEOHEPQ_fake_script() -- TextButton_17.LocalScript
 	button.MouseButton1Click:Connect(toggleFrameVisibility)
 	
 end
-coroutine.wrap(UEOHEPQ_fake_script)()
+coroutine.wrap(FAYFBK_fake_script)()
+
 
 
