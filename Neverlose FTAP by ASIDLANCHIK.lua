@@ -668,7 +668,7 @@ SuperStrenght.Font = Enum.Font.SourceSansSemibold
 SuperStrenght.Text = "Super Strenght"
 SuperStrenght.TextColor3 = Color3.fromRGB(255, 255, 255)
 SuperStrenght.TextSize = 25.000
-SuperStranght.MouseButton1Down:connect(function()
+SuperStrenght.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/st/refs/heads/main/SUP%20STRR", true))()
 end)
 
