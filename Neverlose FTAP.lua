@@ -25,25 +25,26 @@ local RAGE = Instance.new("Frame")
 local TextLabel_9 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
-local ANTI = Instance.new("Frame")
+local INVENTORY = Instance.new("Frame")
 local TextLabel_10 = Instance.new("TextLabel")
-local TextButton_3 = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
 local LEGIT = Instance.new("Frame")
 local FIRSTPERSON = Instance.new("TextButton")
-local TextLabel_11 = Instance.new("TextLabel")
-local PLAYER = Instance.new("Frame")
-local TextLabel_12 = Instance.new("TextLabel")
-local TextButton_4 = Instance.new("TextButton")
-local VIEW = Instance.new("Frame")
 local TextLabel_13 = Instance.new("TextLabel")
+local PLAYER = Instance.new("Frame")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local VIEW = Instance.new("Frame")
+local TextLabel_15 = Instance.new("TextLabel")
 local MAINMISC = Instance.new("Frame")
 local RAINBOWSQUARE = Instance.new("TextButton")
-local TextLabel_14 = Instance.new("TextLabel")
-local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
 local RainbowBall = Instance.new("TextButton")
 local RainbowBigPlatform = Instance.new("TextButton")
 local RainbowBigBall = Instance.new("TextButton")
-local TextButton_5 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
 local FlyStraight = Instance.new("TextButton")
 local FlyKICKRISK = Instance.new("TextButton")
 local TrollGUI = Instance.new("TextButton")
@@ -51,23 +52,16 @@ local CtrlClickTP = Instance.new("TextButton")
 local Noclipdontturnoff = Instance.new("TextButton")
 local SuperJumpGUI = Instance.new("TextButton")
 local SuperStrenght = Instance.new("TextButton")
-local INVENTORY = Instance.new("Frame")
-local TextLabel_16 = Instance.new("TextLabel")
-local TextLabel_17 = Instance.new("TextLabel")
+local ANTI = Instance.new("Frame")
 local TextLabel_18 = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
 local WH = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
-local ImageLabel_2 = Instance.new("ImageLabel")
-local ImageLabel_3 = Instance.new("ImageLabel")
-local ImageLabel_4 = Instance.new("ImageLabel")
-local ImageLabel_5 = Instance.new("ImageLabel")
-local ImageLabel_6 = Instance.new("ImageLabel")
-local ImageLabel_7 = Instance.new("ImageLabel")
-local ImageLabel_8 = Instance.new("ImageLabel")
-local ImageLabel_9 = Instance.new("ImageLabel")
-local ImageLabel_10 = Instance.new("ImageLabel")
 local TextLabel_19 = Instance.new("TextLabel")
 local TextLabel_20 = Instance.new("TextLabel")
+local TextLabel_21 = Instance.new("TextLabel")
+local TextLabel_22 = Instance.new("TextLabel")
+local TextLabel_23 = Instance.new("TextLabel")
 local TextButton_6 = Instance.new("TextButton")
 
 --Properties:
@@ -82,6 +76,7 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.146005511, 0, 0.0728643239, 0)
 Main.Size = UDim2.new(0, 992, 0, 680)
+Main.Visible = false
 
 Panel.Name = "Panel"
 Panel.Parent = Main
@@ -331,43 +326,47 @@ TextButton_2.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/VerbalHubz/Verbal-Hub/main/Verbalhub.lua", true))()
 end)
 
+INVENTORY.Name = "INVENTORY"
+INVENTORY.Parent = Panel
+INVENTORY.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+INVENTORY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+INVENTORY.BorderSizePixel = 0
+INVENTORY.Position = UDim2.new(1.00000012, 0, 0, 0)
+INVENTORY.Size = UDim2.new(0, 992, 0, 680)
+INVENTORY.Visible = false
 
-ANTI.Name = "ANTI"
-ANTI.Parent = Panel
-ANTI.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-ANTI.BackgroundTransparency = 0.150
-ANTI.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ANTI.BorderSizePixel = 0
-ANTI.Position = UDim2.new(1.00000012, 0, 0, 0)
-ANTI.Size = UDim2.new(0, 992, 0, 679)
-ANTI.Visible = false
-
-TextLabel_10.Parent = ANTI
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_10.BackgroundTransparency = 0.600
+TextLabel_10.Parent = INVENTORY
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_10.BorderSizePixel = 0
-TextLabel_10.Position = UDim2.new(0.349798381, 0, 0, 0)
+TextLabel_10.Position = UDim2.new(0.0241935477, 0, 0.0338235311, 0)
 TextLabel_10.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_10.Font = Enum.Font.SourceSansSemibold
-TextLabel_10.Text = "ANTI AIM"
-TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.TextSize = 14.000
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "керамбит голд"
+TextLabel_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.TextSize = 33.000
 
-TextButton_3.Parent = ANTI
-TextButton_3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.0665322617, 0, 0.119293079, 0)
-TextButton_3.Size = UDim2.new(0, 200, 0, 50)
-TextButton_3.Font = Enum.Font.SourceSansSemibold
-TextButton_3.Text = "Spin Player"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextSize = 47.000
-TextButton_3.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/spinnn/refs/heads/main/spiin.lua", true))()
-end)
+TextLabel_11.Parent = INVENTORY
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.726814508, 0, 0.0338235311, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "МЕМЕКРАААЙ"
+TextLabel_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.TextSize = 33.000
 
+TextLabel_12.Parent = INVENTORY
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.344758064, 0, 0.0338235311, 0)
+TextLabel_12.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "ДРАГОН ЛОООР"
+TextLabel_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.TextSize = 33.000
 
 LEGIT.Name = "LEGIT"
 LEGIT.Parent = Panel
@@ -394,16 +393,16 @@ FIRSTPERSON.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/first-person/refs/heads/main/ufp.lua", true))()
 end)
 
-TextLabel_11.Parent = LEGIT
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
-TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_11.BorderSizePixel = 0
-TextLabel_11.Position = UDim2.new(0.369959682, 0, 0, 0)
-TextLabel_11.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_11.Font = Enum.Font.SourceSans
-TextLabel_11.Text = "LEGIT"
-TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.TextSize = 52.000
+TextLabel_13.Parent = LEGIT
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0.369959682, 0, 0, 0)
+TextLabel_13.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "LEGIT"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextSize = 52.000
 
 PLAYER.Name = "PLAYER"
 PLAYER.Parent = Panel
@@ -415,28 +414,28 @@ PLAYER.Position = UDim2.new(1.00000012, 0, 0, 0)
 PLAYER.Size = UDim2.new(0, 992, 0, 679)
 PLAYER.Visible = false
 
-TextLabel_12.Parent = PLAYER
-TextLabel_12.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_12.BorderSizePixel = 0
-TextLabel_12.Position = UDim2.new(0.338709682, 0, 0, 0)
-TextLabel_12.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_12.Font = Enum.Font.SourceSans
-TextLabel_12.Text = "ESP PLAYERS NICKNAMES"
-TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.TextSize = 21.000
+TextLabel_14.Parent = PLAYER
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.338709682, 0, 0, 0)
+TextLabel_14.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "ESP PLAYERS NICKNAMES"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextSize = 21.000
 
-TextButton_4.Parent = PLAYER
-TextButton_4.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.0907258093, 0, 0.13254787, 0)
-TextButton_4.Size = UDim2.new(0, 200, 0, 50)
-TextButton_4.Font = Enum.Font.SourceSansSemibold
-TextButton_4.Text = "ESP NICKNAMES"
-TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.TextSize = 33.000
-TextButton_4.MouseButton1Down:connect(function()
+TextButton_3.Parent = PLAYER
+TextButton_3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.0907258093, 0, 0.13254787, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSansSemibold
+TextButton_3.Text = "ESP NICKNAMES"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 33.000
+TextButton_3.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua", true))()
 end)
 
@@ -449,16 +448,16 @@ VIEW.Position = UDim2.new(1.00000012, 0, 0, 0)
 VIEW.Size = UDim2.new(0, 992, 0, 680)
 VIEW.Visible = false
 
-TextLabel_13.Parent = VIEW
-TextLabel_13.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_13.BorderSizePixel = 0
-TextLabel_13.Position = UDim2.new(0.361895174, 0, 0, 0)
-TextLabel_13.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_13.Font = Enum.Font.SourceSansSemibold
-TextLabel_13.Text = "VIEW"
-TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_13.TextSize = 45.000
+TextLabel_15.Parent = VIEW
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0.361895174, 0, 0, 0)
+TextLabel_15.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_15.Font = Enum.Font.SourceSansSemibold
+TextLabel_15.Text = "VIEW"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextSize = 45.000
 
 MAINMISC.Name = "MAIN MISC"
 MAINMISC.Parent = Panel
@@ -486,27 +485,27 @@ RAINBOWSQUARE.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/spawn/refs/heads/main/spawnn.lua", true))()
 end)
 
-TextLabel_14.Parent = MAINMISC
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Size = UDim2.new(0, 351, 0, 320)
-TextLabel_14.Font = Enum.Font.SourceSans
-TextLabel_14.Text = ""
-TextLabel_14.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_14.TextSize = 14.000
+TextLabel_16.Parent = MAINMISC
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Size = UDim2.new(0, 351, 0, 320)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = ""
+TextLabel_16.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.TextSize = 14.000
 
-TextLabel_15.Parent = TextLabel_14
-TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.BackgroundTransparency = 1.000
-TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_15.BorderSizePixel = 0
-TextLabel_15.Position = UDim2.new(0.396011382, 0, 0, 0)
-TextLabel_15.Size = UDim2.new(0, 61, 0, 33)
-TextLabel_15.Font = Enum.Font.Unknown
-TextLabel_15.Text = "!!! FE !!!"
-TextLabel_15.TextColor3 = Color3.fromRGB(197, 0, 3)
-TextLabel_15.TextSize = 21.000
+TextLabel_17.Parent = TextLabel_16
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0.396011382, 0, 0, 0)
+TextLabel_17.Size = UDim2.new(0, 61, 0, 33)
+TextLabel_17.Font = Enum.Font.Unknown
+TextLabel_17.Text = "!!! FE !!!"
+TextLabel_17.TextColor3 = Color3.fromRGB(197, 0, 3)
+TextLabel_17.TextSize = 21.000
 
 RainbowBall.Name = "Rainbow Ball"
 RainbowBall.Parent = MAINMISC
@@ -553,19 +552,20 @@ RainbowBigBall.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/fgfdf/refs/heads/main/REAhDME.lua", true))()
 end)
 
-TextButton_5.Parent = MAINMISC
-TextButton_5.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0.0110887093, 0, 0.206185564, 0)
-TextButton_5.Size = UDim2.new(0, 328, 0, 39)
-TextButton_5.Font = Enum.Font.SourceSansSemibold
-TextButton_5.Text = "250 Mini Cubes"
-TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_5.TextSize = 33.000
-TextButton_5.MouseButton1Down:connect(function()
+TextButton_4.Parent = MAINMISC
+TextButton_4.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.0110887093, 0, 0.206185564, 0)
+TextButton_4.Size = UDim2.new(0, 328, 0, 39)
+TextButton_4.Font = Enum.Font.SourceSansSemibold
+TextButton_4.Text = "250 Mini Cubes"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 33.000
+TextButton_4.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/sdafhgd/refs/heads/main/dsgdfjdsf.lua", true))()
 end)
+
 
 FlyStraight.Name = "Fly Straight"
 FlyStraight.Parent = MAINMISC
@@ -624,7 +624,7 @@ CtrlClickTP.Text = "Ctrl Click TP"
 CtrlClickTP.TextColor3 = Color3.fromRGB(255, 255, 255)
 CtrlClickTP.TextSize = 37.000
 CtrlClickTP.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://paste.ee/r/NTtmf", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/TP/refs/heads/main/TP.lua", true))()
 end)
 
 Noclipdontturnoff.Name = "Noclip !dont turn off!"
@@ -668,51 +668,44 @@ SuperStrenght.Font = Enum.Font.SourceSansSemibold
 SuperStrenght.Text = "Super Strenght"
 SuperStrenght.TextColor3 = Color3.fromRGB(255, 255, 255)
 SuperStrenght.TextSize = 25.000
-SuperStrenght.MouseButton1Down:connect(function()
+SuperStranght.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/st/refs/heads/main/SUP%20STRR", true))()
 end)
 
-INVENTORY.Name = "INVENTORY"
-INVENTORY.Parent = Panel
-INVENTORY.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-INVENTORY.BorderColor3 = Color3.fromRGB(0, 0, 0)
-INVENTORY.BorderSizePixel = 0
-INVENTORY.Position = UDim2.new(1.00000012, 0, 0, 0)
-INVENTORY.Size = UDim2.new(0, 992, 0, 680)
-INVENTORY.Visible = false
+ANTI.Name = "ANTI"
+ANTI.Parent = Panel
+ANTI.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+ANTI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ANTI.BorderSizePixel = 0
+ANTI.Position = UDim2.new(1.00000012, 0, 0, 0)
+ANTI.Size = UDim2.new(0, 992, 0, 679)
+ANTI.Visible = false
 
-TextLabel_16.Parent = INVENTORY
-TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_16.BorderSizePixel = 0
-TextLabel_16.Position = UDim2.new(0.0241935477, 0, 0.0338235311, 0)
-TextLabel_16.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_16.Font = Enum.Font.SourceSans
-TextLabel_16.Text = "керамбит голд"
-TextLabel_16.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_16.TextSize = 33.000
-
-TextLabel_17.Parent = INVENTORY
-TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_17.BorderSizePixel = 0
-TextLabel_17.Position = UDim2.new(0.726814508, 0, 0.0338235311, 0)
-TextLabel_17.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_17.Font = Enum.Font.SourceSans
-TextLabel_17.Text = "МЕМЕКРАААЙ"
-TextLabel_17.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_17.TextSize = 33.000
-
-TextLabel_18.Parent = INVENTORY
-TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.Parent = ANTI
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_18.BorderSizePixel = 0
-TextLabel_18.Position = UDim2.new(0.344758064, 0, 0.0338235311, 0)
+TextLabel_18.Position = UDim2.new(0.32661289, 0, 0, 0)
 TextLabel_18.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_18.Font = Enum.Font.SourceSans
-TextLabel_18.Text = "ДРАГОН ЛОООР"
-TextLabel_18.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_18.TextSize = 33.000
+TextLabel_18.Font = Enum.Font.SourceSansSemibold
+TextLabel_18.Text = "Anti Aim"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextSize = 37.000
+
+TextButton_5.Parent = ANTI
+TextButton_5.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.0423387103, 0, 0.119293079, 0)
+TextButton_5.Size = UDim2.new(0, 200, 0, 36)
+TextButton_5.Font = Enum.Font.SourceSansSemibold
+TextButton_5.Text = "Spin Player"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 29.000
+TextButton_5.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/spinnn/refs/heads/main/spiin.lua", true))()
+end)
+
 
 WH.Name = "WH"
 WH.Parent = Main
@@ -722,109 +715,68 @@ WH.BorderSizePixel = 0
 WH.Position = UDim2.new(1.0267669, 0, 0.0661764741, 0)
 WH.Size = UDim2.new(0, 221, 0, 590)
 
-ImageLabel.Parent = Main
+ImageLabel.Parent = WH
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.09375, 0, 0, 0)
-ImageLabel.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel.Image = "rbxasset://textures/A_Key_dn.png"
+ImageLabel.Position = UDim2.new(0, 0, 0.203389823, 0)
+ImageLabel.Size = UDim2.new(0, 220, 0, 344)
+ImageLabel.Image = "rbxasset://textures/Character.png"
 
-ImageLabel_2.Parent = Main
-ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Position = UDim2.new(0.0493951626, 0, 0.38529411, 0)
-ImageLabel_2.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_2.Image = "rbxasset://textures/BaseballCapRed.png"
-
-ImageLabel_3.Parent = Main
-ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_3.BorderSizePixel = 0
-ImageLabel_3.Position = UDim2.new(0.231854841, 0, 0.275000006, 0)
-ImageLabel_3.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_3.Image = "rbxasset://textures/bombtex.png"
-
-ImageLabel_4.Parent = Main
-ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_4.BorderSizePixel = 0
-ImageLabel_4.Position = UDim2.new(0.742943525, 0, 0.486764699, 0)
-ImageLabel_4.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_4.Image = "rbxasset://textures/Bomb.png"
-
-ImageLabel_5.Parent = Main
-ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_5.BorderSizePixel = 0
-ImageLabel_5.Position = UDim2.new(0.827620983, 0, 0.755882382, 0)
-ImageLabel_5.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_5.Image = "rbxasset://textures/CameraPanRight_dn.png"
-
-ImageLabel_6.Parent = Main
-ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_6.BorderSizePixel = 0
-ImageLabel_6.Position = UDim2.new(0.425403237, 0, 0.119117647, 0)
-ImageLabel_6.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_6.Image = "rbxasset://textures/Controller1_ds.png"
-
-ImageLabel_7.Parent = Main
-ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_7.BorderSizePixel = 0
-ImageLabel_7.Position = UDim2.new(0.167338714, 0, 0.755882382, 0)
-ImageLabel_7.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_7.Image = "rbxasset://textures/Controller2Tool.png"
-
-ImageLabel_8.Parent = Main
-ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_8.BorderSizePixel = 0
-ImageLabel_8.Position = UDim2.new(0.467741936, 0, 0.486764699, 0)
-ImageLabel_8.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_8.Image = "rbxasset://textures/Glue.png"
-
-ImageLabel_9.Parent = Main
-ImageLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_9.BorderSizePixel = 0
-ImageLabel_9.Position = UDim2.new(0.623991907, 0, 0.220588237, 0)
-ImageLabel_9.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_9.Image = "rbxasset://textures/HalloweenGhost.png"
-
-ImageLabel_10.Parent = Main
-ImageLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_10.BorderSizePixel = 0
-ImageLabel_10.Position = UDim2.new(0.804435492, 0, 0.0735294148, 0)
-ImageLabel_10.Size = UDim2.new(0, 92, 0, 100)
-ImageLabel_10.Image = "rbxasset://textures/Hammer.png"
-
-TextLabel_19.Parent = Main
-TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Parent = ImageLabel
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_19.BorderSizePixel = 0
-TextLabel_19.Position = UDim2.new(0.0423387103, 0, 0.541176498, 0)
-TextLabel_19.Size = UDim2.new(0, 332, 0, 92)
-TextLabel_19.Font = Enum.Font.SourceSansSemibold
-TextLabel_19.Text = "Creator : ASIDLANCHIK "
-TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.TextSize = 29.000
+TextLabel_19.Position = UDim2.new(0.0454545468, 0, 0.0319767445, 0)
+TextLabel_19.Size = UDim2.new(0, 6, 0, 320)
+TextLabel_19.Font = Enum.Font.SourceSans
+TextLabel_19.Text = ""
+TextLabel_19.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.TextSize = 14.000
 
-TextLabel_20.Parent = Main
-TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Parent = ImageLabel
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_20.BorderSizePixel = 0
-TextLabel_20.Position = UDim2.new(0.483870953, 0, 0.739705861, 0)
-TextLabel_20.Size = UDim2.new(0, 288, 0, 52)
-TextLabel_20.Font = Enum.Font.SourceSansSemibold
-TextLabel_20.Text = "Data Release : 19.11.2024"
-TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.TextSize = 29.000
+TextLabel_20.Position = UDim2.new(0.922727287, 0, 0.0319767445, 0)
+TextLabel_20.Size = UDim2.new(0, 7, 0, 320)
+TextLabel_20.Font = Enum.Font.SourceSans
+TextLabel_20.Text = ""
+TextLabel_20.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.TextSize = 14.000
+
+TextLabel_21.Parent = ImageLabel
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(0.0727272704, 0, 0.944767416, 0)
+TextLabel_21.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_21.Font = Enum.Font.SourceSans
+TextLabel_21.Text = ""
+TextLabel_21.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.TextSize = 14.000
+
+TextLabel_22.Parent = ImageLabel
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.0454545468, 0, -0.180232555, 0)
+TextLabel_22.Size = UDim2.new(0, 200, 0, 20)
+TextLabel_22.Font = Enum.Font.SourceSansSemibold
+TextLabel_22.Text = "Player"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextSize = 17.000
+
+TextLabel_23.Parent = WH
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0.0452488698, 0, 0.213559315, 0)
+TextLabel_23.Size = UDim2.new(0, 200, 0, 5)
+TextLabel_23.Font = Enum.Font.SourceSans
+TextLabel_23.Text = ""
+TextLabel_23.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.TextSize = 14.000
 
 TextButton_6.Parent = ScreenGui
 TextButton_6.BackgroundColor3 = Color3.fromRGB(31, 38, 125)
@@ -840,7 +792,7 @@ TextButton_6.TextSize = 29.000
 
 -- Scripts:
 
-local function RQQS_fake_script() -- ragebot.LocalScript 
+local function LSIQKYX_fake_script() -- ragebot.LocalScript 
 	local script = Instance.new('LocalScript', ragebot)
 
 	local button = script.Parent
@@ -853,8 +805,8 @@ local function RQQS_fake_script() -- ragebot.LocalScript
 	button.MouseButton1Click:Connect(toggleFrameVisibility)
 	
 end
-coroutine.wrap(RQQS_fake_script)()
-local function NFHJQOR_fake_script() -- AntiAim.LocalScript 
+coroutine.wrap(LSIQKYX_fake_script)()
+local function BENHPMP_fake_script() -- AntiAim.LocalScript 
 	local script = Instance.new('LocalScript', AntiAim)
 
 	local button = script.Parent
@@ -868,8 +820,8 @@ local function NFHJQOR_fake_script() -- AntiAim.LocalScript
 	
 	
 end
-coroutine.wrap(NFHJQOR_fake_script)()
-local function QUOFB_fake_script() -- Legitbot.LocalScript 
+coroutine.wrap(BENHPMP_fake_script)()
+local function PMJLUA_fake_script() -- Legitbot.LocalScript 
 	local script = Instance.new('LocalScript', Legitbot)
 
 	local button = script.Parent
@@ -883,8 +835,8 @@ local function QUOFB_fake_script() -- Legitbot.LocalScript
 	
 	
 end
-coroutine.wrap(QUOFB_fake_script)()
-local function MCKYAZ_fake_script() -- players.LocalScript 
+coroutine.wrap(PMJLUA_fake_script)()
+local function MEPR_fake_script() -- players.LocalScript 
 	local script = Instance.new('LocalScript', players)
 
 	local button = script.Parent
@@ -899,8 +851,8 @@ local function MCKYAZ_fake_script() -- players.LocalScript
 	
 	
 end
-coroutine.wrap(MCKYAZ_fake_script)()
-local function AJXMHCX_fake_script() -- View.LocalScript 
+coroutine.wrap(MEPR_fake_script)()
+local function KJSR_fake_script() -- View.LocalScript 
 	local script = Instance.new('LocalScript', View)
 
 	local button = script.Parent
@@ -914,12 +866,12 @@ local function AJXMHCX_fake_script() -- View.LocalScript
 	
 	
 end
-coroutine.wrap(AJXMHCX_fake_script)()
-local function YZLIMED_fake_script() -- MainMisc.LocalScript 
+coroutine.wrap(KJSR_fake_script)()
+local function VSVH_fake_script() -- MainMisc.LocalScript 
 	local script = Instance.new('LocalScript', MainMisc)
 
 	local button = script.Parent
-	local frame = button.Parent:FindFirstChild("MAIN MIS") -- Найдите фрейм в родительском объекте
+	local frame = button.Parent:FindFirstChild("MAIN MISC") -- Найдите фрейм в родительском объекте
 	
 	local function toggleFrameVisibility()
 		frame.Visible = not frame.Visible -- Переключите видимость фрейма
@@ -929,8 +881,8 @@ local function YZLIMED_fake_script() -- MainMisc.LocalScript
 	
 	
 end
-coroutine.wrap(YZLIMED_fake_script)()
-local function KTXRCI_fake_script() -- Inventory.LocalScript 
+coroutine.wrap(VSVH_fake_script)()
+local function JHBNP_fake_script() -- Inventory.LocalScript 
 	local script = Instance.new('LocalScript', Inventory)
 
 	local button = script.Parent
@@ -944,8 +896,8 @@ local function KTXRCI_fake_script() -- Inventory.LocalScript
 	
 	
 end
-coroutine.wrap(KTXRCI_fake_script)()
-local function WYOAPUH_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(JHBNP_fake_script)()
+local function TIFVZ_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local button = script.Parent
@@ -959,6 +911,6 @@ local function WYOAPUH_fake_script() -- TextButton_6.LocalScript
 	
 	
 end
-coroutine.wrap(WYOAPUH_fake_script)()
+coroutine.wrap(TIFVZ_fake_script)()
 
 
