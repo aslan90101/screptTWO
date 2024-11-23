@@ -305,11 +305,11 @@ TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.0493951626, 0, 0.0736377016, 0)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
 TextButton.Font = Enum.Font.SourceSansSemibold
-TextButton.Text = "BlizT CRACK"
+TextButton.Text = "BlizT"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 41.000
 TextButton.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/blzrcrack/refs/heads/main/ZT.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/blzrcrack/refs/heads/main/ZTT.lua", true))()
 end)
 
 TextButton_2.Parent = RAGE
